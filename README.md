@@ -1,2 +1,2 @@
 # C-Project
-this repo for hospital management system
+this repo for prudoct management system
