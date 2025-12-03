@@ -1,0 +1,31 @@
+C:\Users\hadi\Desktop\ProductMangmentSystem\PorductMangment\PorductMangment\bin\Debug\PorductMangment.exe.config
+C:\Users\hadi\Desktop\ProductMangmentSystem\PorductMangment\PorductMangment\obj\Debug\PorductMangment.csprojResolveAssemblyReference.cache
+C:\Users\hadi\Desktop\ProductMangmentSystem\PorductMangment\PorductMangment\obj\Debug\PorductMangment.FormLogin.resources
+C:\Users\hadi\Desktop\ProductMangmentSystem\PorductMangment\PorductMangment\obj\Debug\PorductMangment.Properties.Resources.resources
+C:\Users\hadi\Desktop\ProductMangmentSystem\PorductMangment\PorductMangment\obj\Debug\PorductMangment.csproj.GenerateResource.Cache
+C:\Users\hadi\Desktop\ProductMangmentSystem\PorductMangment\PorductMangment\bin\Debug\PorductMangment.exe
+C:\Users\hadi\Desktop\ProductMangmentSystem\PorductMangment\PorductMangment\bin\Debug\PorductMangment.pdb
+C:\Users\hadi\Desktop\ProductMangmentSystem\PorductMangment\PorductMangment\obj\Debug\PorductMangment.exe
+C:\Users\hadi\Desktop\ProductMangmentSystem\PorductMangment\PorductMangment\obj\Debug\PorductMangment.pdb
+C:\Users\hadi\Desktop\ProductMangmentSystem\PorductMangment\PorductMangment\obj\Debug\PorductMangment.PL.FormMain.resources
+C:\Users\hadi\Desktop\ProductMangmentSystem\PorductMangment\PorductMangment\obj\Debug\PorductMangment.PL.Add_Product_us.resources
+D:\مشاريعي\ادارة منتجات\PorductMangment\PorductMangment\bin\Debug\PorductMangment.exe.config
+D:\مشاريعي\ادارة منتجات\PorductMangment\PorductMangment\obj\Debug\PorductMangment.exe
+D:\مشاريعي\ادارة منتجات\PorductMangment\PorductMangment\obj\Debug\PorductMangment.pdb
+D:\مشاريعي\ادارة منتجات\PorductMangment\PorductMangment\bin\Debug\PorductMangment.exe
+D:\مشاريعي\ادارة منتجات\PorductMangment\PorductMangment\bin\Debug\PorductMangment.pdb
+D:\مشاريعي\ادارة منتجات\PorductMangment\PorductMangment\obj\Debug\PorductMangment.csprojResolveAssemblyReference.cache
+D:\مشاريعي\ادارة منتجات\PorductMangment\PorductMangment\obj\Debug\PorductMangment.PL.Add_Product_us.resources
+D:\مشاريعي\ادارة منتجات\PorductMangment\PorductMangment\obj\Debug\PorductMangment.PL.FormMain.resources
+D:\مشاريعي\ادارة منتجات\PorductMangment\PorductMangment\obj\Debug\PorductMangment.PL.FormProductUs.resources
+D:\مشاريعي\ادارة منتجات\PorductMangment\PorductMangment\obj\Debug\PorductMangment.Properties.Resources.resources
+D:\مشاريعي\ادارة منتجات\PorductMangment\PorductMangment\obj\Debug\PorductMangment.csproj.GenerateResource.Cache
+D:\مشاريعي\ادارة منتجات\PorductMangment\PorductMangment\obj\Debug\PorductMangment.PL.LoginUc.resources
+D:\مشاريعي\ادارة منتجات\PorductMangment\PorductMangment\bin\Debug\Bunifu_UI_v1.52.dll
+D:\مشاريعي\ادارة منتجات\PorductMangment\PorductMangment\obj\Debug\PorductMangment.PL.FormUpdateProduct.resources
+D:\مشاريعي\ادارة منتجات\PorductMangment\PorductMangment\obj\Debug\PorductMangment.PL.Formreviw.resources
+D:\مشاريعي\ادارة منتجات\PorductMangment\PorductMangment\obj\Debug\PorductMangment.PL.Categories.resources
+D:\مشاريعي\ادارة منتجات\PorductMangment\PorductMangment\obj\Debug\PorductMangment.PL.test.resources
+D:\مشاريعي\ادارة منتجات\PorductMangment\PorductMangment\obj\Debug\PorductMangment.PL.CustomerUC.resources
+D:\مشاريعي\ادارة منتجات\PorductMangment\PorductMangment\obj\Debug\PorductMangment.PL.FormOrder.resources
+D:\مشاريعي\ادارة منتجات\PorductMangment\PorductMangment\obj\Debug\PorductMangment.PL.form_coustomer_list.resources
