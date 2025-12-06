@@ -11,12 +11,14 @@ namespace PorductMangment
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+        public static string fullname;
         [STAThread]
         static void Main()
         {
+            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PL.test());
+            Application.Run(new PL.FormMain());
         }
     }
 }

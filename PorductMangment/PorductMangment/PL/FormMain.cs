@@ -103,6 +103,27 @@ namespace PorductMangment.PL
             mainpa.Controls.Add(cu);
         }
 
+        private void ملفToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ادارةالمبيعاتToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mainpa.Controls.Clear();
+            FormOrder fo = new FormOrder();
+            fo.Dock = DockStyle.Fill;
+            mainpa.Controls.Add(fo);
+        }
+
+        private void ادارةالمستخدمينToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mainpa.Controls.Clear();
+            UsersUc us = new UsersUc();
+            us.Dock = DockStyle.Fill;
+            mainpa.Controls.Add(us);
+        }
+
     
 
        

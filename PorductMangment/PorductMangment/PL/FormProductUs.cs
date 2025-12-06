@@ -75,6 +75,11 @@ namespace PorductMangment.PL
             fr.Show();
         }
 
+        private void addbtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
        
         
 

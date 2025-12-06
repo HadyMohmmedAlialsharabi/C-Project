@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace PorductMangment.PL
 {
     public partial class LoginUc : UserControl
     {
-        BL.CLS_LOGIN log = new BL.CLS_LOGIN();
+        BL.Users log = new BL.Users();
         public LoginUc()
         {
             InitializeComponent();
@@ -25,14 +26,28 @@ namespace PorductMangment.PL
             if (dt.Rows.Count > 0)
             {
                 MessageBox.Show(" login Sucessfuly");
-                PL.FormMain main = new PL.FormMain();
-                PL.FormMain.getMainForm.استعادةنسخةمحفوظةToolStripMenuItem.Enabled = true;
-                PL.FormMain.getMainForm.العملاءToolStripMenuItem.Enabled = true;
-                PL.FormMain.getMainForm.المستخدمينToolStripMenuItem.Enabled = true;
-                PL.FormMain.getMainForm.المنتجاتToolStripMenuItem.Enabled = true;
-                PL.FormMain.getMainForm.انشاءنسخةاحتياطيةToolStripMenuItem.Enabled = true;
-
-                this.Hide();
+                PL.FormMain main = new PL.FormMain( );
+                if (dt.Rows[0][2].ToString()=="مدير")
+                {
+                    PL.FormMain.getMainForm.استعادةنسخةمحفوظةToolStripMenuItem.Enabled = true;
+                    PL.FormMain.getMainForm.العملاءToolStripMenuItem.Enabled = true;
+                    PL.FormMain.getMainForm.المستخدمينToolStripMenuItem.Enabled = true;
+                    PL.FormMain.getMainForm.المنتجاتToolStripMenuItem.Enabled = true;
+                    PL.FormMain.getMainForm.انشاءنسخةاحتياطيةToolStripMenuItem.Enabled = true;
+                    Program.fullname = dt.Rows[0]["FULLNAME"].ToString();
+                    this.Hide();   
+                }
+                else
+                {
+                    PL.FormMain.getMainForm.استعادةنسخةمحفوظةToolStripMenuItem.Enabled = true;
+                    PL.FormMain.getMainForm.العملاءToolStripMenuItem.Enabled = true;
+                    PL.FormMain.getMainForm.المنتجاتToolStripMenuItem.Enabled = true;
+                    PL.FormMain.getMainForm.انشاءنسخةاحتياطيةToolStripMenuItem.Enabled = true;
+                    Program.fullname = dt.Rows[0]["FULLNAME"].ToString();
+                    this.Hide();  
+                }
+                
+                
 
             }
             else
@@ -46,6 +61,10 @@ namespace PorductMangment.PL
             this.Hide();
 
         }
+        
+
+
+      
 
        
         

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_Product_us));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.uploadebtn = new System.Windows.Forms.Button();
@@ -36,15 +37,16 @@
             this.quantitytxt = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.pricetxt = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.discreptiontxt = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.reftxt = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.catgioresbox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.canelbtn = new System.Windows.Forms.Button();
             this.submitbtn = new System.Windows.Forms.Button();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.label7 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -54,21 +56,22 @@
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.BackColor = System.Drawing.Color.AliceBlue;
+            this.groupBox1.BackColor = System.Drawing.Color.CadetBlue;
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.uploadebtn);
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.quantitytxt);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.pricetxt);
-            this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.discreptiontxt);
-            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.reftxt);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.catgioresbox);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(97, 51);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -127,20 +130,10 @@
             // pricetxt
             // 
             this.pricetxt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pricetxt.Location = new System.Drawing.Point(919, 215);
+            this.pricetxt.Location = new System.Drawing.Point(919, 235);
             this.pricetxt.Name = "pricetxt";
             this.pricetxt.Size = new System.Drawing.Size(439, 41);
             this.pricetxt.TabIndex = 2;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(1422, 218);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(149, 34);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "سعر المنتج";
             // 
             // discreptiontxt
             // 
@@ -151,16 +144,6 @@
             this.discreptiontxt.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.discreptiontxt.Size = new System.Drawing.Size(514, 240);
             this.discreptiontxt.TabIndex = 4;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(1428, 372);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(154, 34);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "وصف المنتج";
             // 
             // reftxt
             // 
@@ -174,18 +157,20 @@
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(1430, 81);
+            this.label2.BackColor = System.Drawing.Color.Gray;
+            this.label2.Location = new System.Drawing.Point(1408, 67);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(152, 34);
+            this.label2.Padding = new System.Windows.Forms.Padding(20);
+            this.label2.Size = new System.Drawing.Size(327, 74);
             this.label2.TabIndex = 2;
-            this.label2.Text = "صنف المنتج";
+            this.label2.Text = "               صنف المنتج";
             // 
             // catgioresbox
             // 
             this.catgioresbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.catgioresbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.catgioresbox.FormattingEnabled = true;
-            this.catgioresbox.Location = new System.Drawing.Point(919, 78);
+            this.catgioresbox.Location = new System.Drawing.Point(919, 87);
             this.catgioresbox.Name = "catgioresbox";
             this.catgioresbox.Size = new System.Drawing.Size(439, 42);
             this.catgioresbox.TabIndex = 1;
@@ -229,6 +214,35 @@
             this.submitbtn.UseVisualStyleBackColor = false;
             this.submitbtn.Click += new System.EventHandler(this.submitbtn_Click);
             // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 20;
+            this.bunifuElipse1.TargetControl = this.groupBox1;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Gray;
+            this.label7.Location = new System.Drawing.Point(1405, 217);
+            this.label7.Name = "label7";
+            this.label7.Padding = new System.Windows.Forms.Padding(20);
+            this.label7.Size = new System.Drawing.Size(324, 74);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "              سعر المنتج ";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Gray;
+            this.label4.Location = new System.Drawing.Point(1405, 386);
+            this.label4.Name = "label4";
+            this.label4.Padding = new System.Windows.Forms.Padding(20);
+            this.label4.Size = new System.Drawing.Size(311, 74);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "             وصف المنتج";
+            // 
             // Add_Product_us
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -252,7 +266,6 @@
         private System.Windows.Forms.ComboBox catgioresbox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox discreptiontxt;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox reftxt;
         private System.Windows.Forms.Button uploadebtn;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -260,8 +273,10 @@
         private System.Windows.Forms.TextBox quantitytxt;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox pricetxt;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button canelbtn;
         private System.Windows.Forms.Button submitbtn;
+        private System.Windows.Forms.Label label7;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private System.Windows.Forms.Label label4;
     }
 }

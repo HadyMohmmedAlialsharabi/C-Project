@@ -20,9 +20,9 @@ namespace PorductMangment.PL
         private void test_Load(object sender, EventArgs e)
         {
             mainPa.Controls.Clear();
-            CustomerUC cu = new CustomerUC();
-            cu.Dock = DockStyle.Fill;
-            mainPa.Controls.Add(cu);
+            UsersUc us = new UsersUc();
+            us.Dock = DockStyle.Fill;
+            mainPa.Controls.Add(us);
         }
     }
 }

@@ -88,6 +88,7 @@
             this.addbtn.TabIndex = 11;
             this.addbtn.Text = "اضافة منتج جديد";
             this.addbtn.UseVisualStyleBackColor = true;
+            this.addbtn.Click += new System.EventHandler(this.addbtn_Click);
             // 
             // button8
             // 

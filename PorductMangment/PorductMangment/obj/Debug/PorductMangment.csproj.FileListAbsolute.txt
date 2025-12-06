@@ -27,3 +27,7 @@ D:\مشاريعي\ادارة منتجات\PorductMangment\PorductMangment\obj\De
 D:\مشاريعي\ادارة منتجات\PorductMangment\PorductMangment\obj\Debug\PorductMangment.PL.Categories.resources
 D:\مشاريعي\ادارة منتجات\PorductMangment\PorductMangment\obj\Debug\PorductMangment.PL.test.resources
 D:\مشاريعي\ادارة منتجات\PorductMangment\PorductMangment\obj\Debug\PorductMangment.PL.CustomerUC.resources
+D:\مشاريعي\ادارة منتجات\PorductMangment\PorductMangment\obj\Debug\PorductMangment.PL.FormOrder.resources
+D:\مشاريعي\ادارة منتجات\PorductMangment\PorductMangment\obj\Debug\PorductMangment.PL.form_coustomer_list.resources
+D:\مشاريعي\ادارة منتجات\PorductMangment\PorductMangment\obj\Debug\PorductMangment.PL.form_product_listcs.resources
+D:\مشاريعي\ادارة منتجات\PorductMangment\PorductMangment\obj\Debug\PorductMangment.PL.UsersUc.resources

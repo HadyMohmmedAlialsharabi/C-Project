@@ -37,36 +37,38 @@
             this.deletebtn = new System.Windows.Forms.Button();
             this.newbtn = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.searchbtn = new Bunifu.Framework.UI.BunifuImageButton();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.dgList = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.firstbtn = new System.Windows.Forms.Button();
+            this.previosbtn = new System.Windows.Forms.Button();
             this.lblPosition = new System.Windows.Forms.Label();
-            this.ss = new System.Windows.Forms.Panel();
-            this.ss2 = new System.Windows.Forms.Panel();
-            this.pbox = new System.Windows.Forms.PictureBox();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtTel = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtLastName = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtFirstName = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnLast = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse4 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtFirstName = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtLastName = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtTel = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.pbox = new System.Windows.Forms.PictureBox();
+            this.ss2 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.ss = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.searchbtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgList)).BeginInit();
             this.groupBox1.SuspendLayout();
-            this.ss.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbox)).BeginInit();
+            this.ss.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -103,6 +105,7 @@
             this.addbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.addbtn.Enabled = false;
             this.addbtn.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.addbtn.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addbtn.Location = new System.Drawing.Point(1169, 22);
@@ -126,6 +129,7 @@
             this.editbtn.TabIndex = 11;
             this.editbtn.Text = "تعديل";
             this.editbtn.UseVisualStyleBackColor = true;
+            this.editbtn.Click += new System.EventHandler(this.editbtn_Click);
             // 
             // deletebtn
             // 
@@ -140,6 +144,7 @@
             this.deletebtn.TabIndex = 12;
             this.deletebtn.Text = "حذف";
             this.deletebtn.UseVisualStyleBackColor = true;
+            this.deletebtn.Click += new System.EventHandler(this.deletebtn_Click);
             // 
             // newbtn
             // 
@@ -158,7 +163,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.bunifuImageButton1);
+            this.groupBox2.Controls.Add(this.searchbtn);
             this.groupBox2.Controls.Add(this.txtSearch);
             this.groupBox2.Controls.Add(this.dgList);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Left;
@@ -171,18 +176,19 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "بيانات جميع العملاء";
             // 
-            // bunifuImageButton1
+            // searchbtn
             // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(790, 45);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(71, 71);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 13;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
+            this.searchbtn.BackColor = System.Drawing.Color.Transparent;
+            this.searchbtn.Image = ((System.Drawing.Image)(resources.GetObject("searchbtn.Image")));
+            this.searchbtn.ImageActive = null;
+            this.searchbtn.Location = new System.Drawing.Point(790, 45);
+            this.searchbtn.Name = "searchbtn";
+            this.searchbtn.Size = new System.Drawing.Size(71, 71);
+            this.searchbtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.searchbtn.TabIndex = 13;
+            this.searchbtn.TabStop = false;
+            this.searchbtn.Zoom = 10;
+            this.searchbtn.Click += new System.EventHandler(this.searchbtn_Click);
             // 
             // txtSearch
             // 
@@ -193,15 +199,16 @@
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(607, 51);
             this.txtSearch.TabIndex = 12;
+            this.txtSearch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSearch_KeyDown);
             // 
             // dgList
             // 
             this.dgList.AllowUserToAddRows = false;
-            this.dgList.AllowUserToDeleteRows = false;
             this.dgList.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.dgList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgList.BackgroundColor = System.Drawing.SystemColors.Info;
+            this.dgList.BackgroundColor = System.Drawing.Color.PowderBlue;
+            this.dgList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgList.Location = new System.Drawing.Point(3, 163);
             this.dgList.Margin = new System.Windows.Forms.Padding(4);
@@ -209,13 +216,14 @@
             this.dgList.Name = "dgList";
             this.dgList.ReadOnly = true;
             this.dgList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgList.Size = new System.Drawing.Size(884, 622);
+            this.dgList.Size = new System.Drawing.Size(907, 622);
             this.dgList.TabIndex = 10;
+            this.dgList.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgList_CellMouseClick);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.firstbtn);
+            this.groupBox1.Controls.Add(this.previosbtn);
             this.groupBox1.Controls.Add(this.lblPosition);
             this.groupBox1.Controls.Add(this.ss);
             this.groupBox1.Controls.Add(this.btnLast);
@@ -230,33 +238,35 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "بيانات العميل";
             // 
-            // button2
+            // firstbtn
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button2.Font = new System.Drawing.Font("Tahoma", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ImageKey = "resultset_previous.png";
-            this.button2.Location = new System.Drawing.Point(625, 697);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(89, 53);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "<<";
-            this.button2.UseVisualStyleBackColor = true;
+            this.firstbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.firstbtn.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.firstbtn.Font = new System.Drawing.Font("Tahoma", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstbtn.ImageKey = "resultset_previous.png";
+            this.firstbtn.Location = new System.Drawing.Point(625, 697);
+            this.firstbtn.Margin = new System.Windows.Forms.Padding(4);
+            this.firstbtn.Name = "firstbtn";
+            this.firstbtn.Size = new System.Drawing.Size(89, 53);
+            this.firstbtn.TabIndex = 5;
+            this.firstbtn.Text = "<<";
+            this.firstbtn.UseVisualStyleBackColor = true;
+            this.firstbtn.Click += new System.EventHandler(this.firstbtn_Click);
             // 
-            // button1
+            // previosbtn
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button1.Font = new System.Drawing.Font("Tahoma", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ImageKey = "resultset_first.png";
-            this.button1.Location = new System.Drawing.Point(372, 697);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(52, 53);
-            this.button1.TabIndex = 7;
-            this.button1.Text = ">";
-            this.button1.UseVisualStyleBackColor = true;
+            this.previosbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.previosbtn.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.previosbtn.Font = new System.Drawing.Font("Tahoma", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.previosbtn.ImageKey = "resultset_first.png";
+            this.previosbtn.Location = new System.Drawing.Point(372, 697);
+            this.previosbtn.Margin = new System.Windows.Forms.Padding(4);
+            this.previosbtn.Name = "previosbtn";
+            this.previosbtn.Size = new System.Drawing.Size(52, 53);
+            this.previosbtn.TabIndex = 7;
+            this.previosbtn.Text = ">";
+            this.previosbtn.UseVisualStyleBackColor = true;
+            this.previosbtn.Click += new System.EventHandler(this.previosbtn_Click);
             // 
             // lblPosition
             // 
@@ -273,146 +283,6 @@
             this.lblPosition.TabIndex = 36;
             this.lblPosition.Text = "6 / 7";
             // 
-            // ss
-            // 
-            this.ss.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.ss.BackColor = System.Drawing.Color.CadetBlue;
-            this.ss.Controls.Add(this.ss2);
-            this.ss.Controls.Add(this.pbox);
-            this.ss.Controls.Add(this.txtEmail);
-            this.ss.Controls.Add(this.label4);
-            this.ss.Controls.Add(this.txtTel);
-            this.ss.Controls.Add(this.label3);
-            this.ss.Controls.Add(this.txtLastName);
-            this.ss.Controls.Add(this.label2);
-            this.ss.Controls.Add(this.txtFirstName);
-            this.ss.Controls.Add(this.label1);
-            this.ss.Location = new System.Drawing.Point(115, 107);
-            this.ss.Name = "ss";
-            this.ss.Size = new System.Drawing.Size(785, 573);
-            this.ss.TabIndex = 0;
-            // 
-            // ss2
-            // 
-            this.ss2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.ss2.BackColor = System.Drawing.Color.PowderBlue;
-            this.ss2.Location = new System.Drawing.Point(654, 376);
-            this.ss2.Name = "ss2";
-            this.ss2.Size = new System.Drawing.Size(200, 289);
-            this.ss2.TabIndex = 36;
-            // 
-            // pbox
-            // 
-            this.pbox.BackColor = System.Drawing.Color.White;
-            this.pbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbox.Location = new System.Drawing.Point(65, 313);
-            this.pbox.Margin = new System.Windows.Forms.Padding(4);
-            this.pbox.Name = "pbox";
-            this.pbox.Size = new System.Drawing.Size(412, 205);
-            this.pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbox.TabIndex = 35;
-            this.pbox.TabStop = false;
-            this.pbox.Click += new System.EventHandler(this.pbox_Click);
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtEmail.Location = new System.Drawing.Point(65, 238);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(439, 36);
-            this.txtEmail.TabIndex = 4;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(510, 238);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(230, 34);
-            this.label4.TabIndex = 32;
-            this.label4.Text = "البريد الالكتروني";
-            // 
-            // txtTel
-            // 
-            this.txtTel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTel.Location = new System.Drawing.Point(65, 175);
-            this.txtTel.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTel.Name = "txtTel";
-            this.txtTel.Size = new System.Drawing.Size(439, 36);
-            this.txtTel.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(547, 175);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(156, 34);
-            this.label3.TabIndex = 30;
-            this.label3.Text = "رقم الهاتف";
-            // 
-            // txtLastName
-            // 
-            this.txtLastName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtLastName.Location = new System.Drawing.Point(65, 121);
-            this.txtLastName.Margin = new System.Windows.Forms.Padding(4);
-            this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(439, 36);
-            this.txtLastName.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(529, 121);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(202, 34);
-            this.label2.TabIndex = 28;
-            this.label2.Text = "الاسم العائلي";
-            // 
-            // txtFirstName
-            // 
-            this.txtFirstName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtFirstName.Location = new System.Drawing.Point(65, 56);
-            this.txtFirstName.Margin = new System.Windows.Forms.Padding(4);
-            this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(439, 36);
-            this.txtFirstName.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(504, 56);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(235, 34);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "الاسم الشخصي";
-            // 
             // btnLast
             // 
             this.btnLast.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -426,6 +296,7 @@
             this.btnLast.TabIndex = 8;
             this.btnLast.Text = ">>";
             this.btnLast.UseVisualStyleBackColor = true;
+            this.btnLast.Click += new System.EventHandler(this.btnLast_Click);
             // 
             // btnNext
             // 
@@ -440,6 +311,7 @@
             this.btnNext.TabIndex = 6;
             this.btnNext.Text = "<";
             this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // bunifuElipse1
             // 
@@ -456,6 +328,166 @@
             this.bunifuElipse3.ElipseRadius = 10;
             this.bunifuElipse3.TargetControl = this.lblPosition;
             // 
+            // bunifuElipse4
+            // 
+            this.bunifuElipse4.ElipseRadius = 20;
+            this.bunifuElipse4.TargetControl = this.dgList;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(504, 56);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(235, 34);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "الاسم الشخصي";
+            // 
+            // txtFirstName
+            // 
+            this.txtFirstName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtFirstName.Location = new System.Drawing.Point(65, 56);
+            this.txtFirstName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtFirstName.Name = "txtFirstName";
+            this.txtFirstName.Size = new System.Drawing.Size(439, 36);
+            this.txtFirstName.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(529, 121);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(202, 34);
+            this.label2.TabIndex = 28;
+            this.label2.Text = "الاسم العائلي";
+            // 
+            // txtLastName
+            // 
+            this.txtLastName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLastName.Location = new System.Drawing.Point(65, 121);
+            this.txtLastName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.Size = new System.Drawing.Size(439, 36);
+            this.txtLastName.TabIndex = 2;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(547, 175);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(156, 34);
+            this.label3.TabIndex = 30;
+            this.label3.Text = "رقم الهاتف";
+            // 
+            // txtTel
+            // 
+            this.txtTel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTel.Location = new System.Drawing.Point(65, 175);
+            this.txtTel.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTel.Name = "txtTel";
+            this.txtTel.Size = new System.Drawing.Size(439, 36);
+            this.txtTel.TabIndex = 3;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(510, 238);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(230, 34);
+            this.label4.TabIndex = 32;
+            this.label4.Text = "البريد الالكتروني";
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtEmail.Location = new System.Drawing.Point(65, 238);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(439, 36);
+            this.txtEmail.TabIndex = 4;
+            // 
+            // pbox
+            // 
+            this.pbox.BackColor = System.Drawing.Color.White;
+            this.pbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbox.Location = new System.Drawing.Point(65, 319);
+            this.pbox.Margin = new System.Windows.Forms.Padding(4);
+            this.pbox.Name = "pbox";
+            this.pbox.Size = new System.Drawing.Size(439, 211);
+            this.pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbox.TabIndex = 35;
+            this.pbox.TabStop = false;
+            this.pbox.Click += new System.EventHandler(this.pbox_Click);
+            // 
+            // ss2
+            // 
+            this.ss2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.ss2.BackColor = System.Drawing.Color.PowderBlue;
+            this.ss2.Location = new System.Drawing.Point(654, 376);
+            this.ss2.Name = "ss2";
+            this.ss2.Size = new System.Drawing.Size(200, 289);
+            this.ss2.TabIndex = 36;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(571, 398);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(147, 34);
+            this.label5.TabIndex = 37;
+            this.label5.Text = "صورة 4*6";
+            // 
+            // ss
+            // 
+            this.ss.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ss.BackColor = System.Drawing.Color.CadetBlue;
+            this.ss.Controls.Add(this.label5);
+            this.ss.Controls.Add(this.ss2);
+            this.ss.Controls.Add(this.pbox);
+            this.ss.Controls.Add(this.txtEmail);
+            this.ss.Controls.Add(this.label4);
+            this.ss.Controls.Add(this.txtTel);
+            this.ss.Controls.Add(this.label3);
+            this.ss.Controls.Add(this.txtLastName);
+            this.ss.Controls.Add(this.label2);
+            this.ss.Controls.Add(this.txtFirstName);
+            this.ss.Controls.Add(this.label1);
+            this.ss.Location = new System.Drawing.Point(115, 107);
+            this.ss.Name = "ss";
+            this.ss.Size = new System.Drawing.Size(785, 573);
+            this.ss.TabIndex = 0;
+            // 
             // CustomerUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -468,13 +500,13 @@
             this.panel1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.searchbtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgList)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox)).EndInit();
             this.ss.ResumeLayout(false);
             this.ss.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -488,12 +520,22 @@
         private System.Windows.Forms.Button editbtn;
         private System.Windows.Forms.Button deletebtn;
         private System.Windows.Forms.Button newbtn;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
+        private Bunifu.Framework.UI.BunifuImageButton searchbtn;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.DataGridView dgList;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label lblPosition;
+        private System.Windows.Forms.Button btnLast;
+        private System.Windows.Forms.Button btnNext;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
+        private System.Windows.Forms.Button firstbtn;
+        private System.Windows.Forms.Button previosbtn;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse3;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse4;
         private System.Windows.Forms.Panel ss;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel ss2;
         private System.Windows.Forms.PictureBox pbox;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label4;
@@ -503,13 +545,5 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtFirstName;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnLast;
-        private System.Windows.Forms.Button btnNext;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
-        private System.Windows.Forms.Panel ss2;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse3;
     }
 }
